@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "561324585846",
+    "project_id": "attendace-7f77b",
+    "storage_bucket": "attendace-7f77b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561324585846:android:3c69fcd863ba6256c88057",
+        "android_client_info": {
+          "package_name": "com.example.attendancev1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561324585846-ml2kdsaacikffnoqr5u0i041vsk26sih.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.attendancev1",
+            "certificate_hash": "a0c8ec2a602575cd7f69147dea19310bdbd317fb"
+          }
+        },
+        {
+          "client_id": "561324585846-41jepokm1uhrua1rgvtlg68vaanai7n6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5QNJu05ja0LSx8Uuw2rNQji6MgASUD0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561324585846-41jepokm1uhrua1rgvtlg68vaanai7n6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

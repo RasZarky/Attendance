@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentProgressActivity"
+    android:background="@drawable/blue_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <!-- android:layoutAnimation="@anim/layout_animation"-->>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/percentage">
+
+        <ProgressBar
+            android:id="@+id/progress_circular1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="1dp"
+            android:padding="80dp"
+            android:indeterminate="true"
+            android:indeterminateTint="#F00"
+            android:indeterminateTintMode="src_in"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/Total_Percentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:textSize="100sp"
+            android:background="@drawable/light_orange_back"/>
+
+        <TextView
+            android:id="@+id/Course_Code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comp 434"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="190dp"
+            android:textColor="#033FF4"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Total_Days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/percentage"
+            android:background="@drawable/category_background2"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Total Number Of Days"
+                android:textAlignment="center"
+                android:textColor="#033FF4"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:id="@+id/Total_Days1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#033FF4"
+                android:layout_marginTop="50dp"
+                android:textAlignment="center"
+                android:textSize="50sp"
+                tools:ignore="DuplicateIds" />
+
+            <ProgressBar
+                android:id="@+id/progress_circular2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:indeterminate="true"
+                android:indeterminateTint="#F00"
+                android:indeterminateTintMode="src_in"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/attended"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_background3"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/Total_Days">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Days Attended"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textColor="#033FF4"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:id="@+id/Days_Attended"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#033FF4"
+                android:layout_marginTop="50dp"
+                android:textAlignment="center"
+                android:textSize="50sp" />
+            <ProgressBar
+                android:id="@+id/progress_circular4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:indeterminate="true"
+                android:indeterminateTint="#F00"
+                android:indeterminateTintMode="src_in"
+                android:visibility="visible"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/RDaysMissed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_background4"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/attended">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#033FF4"
+                android:text="Days Missed"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:id="@+id/Days_Missed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#033FF4"
+                android:layout_marginTop="50dp"
+                android:textAlignment="center"
+                android:textSize="50sp" />
+
+            <ProgressBar
+                android:id="@+id/progress_circular3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:indeterminate="true"
+                android:indeterminateTint="#F00"
+                android:indeterminateTintMode="src_in"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+    <TextView
+        android:id="@+id/trick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/updateClass"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/plus"
+        android:layout_below="@+id/RDaysMissed"/>
+
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

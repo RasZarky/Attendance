@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_background_green1"
+    tools:context=".SignupActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/rectangle_trans">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rectangle_trans"
+                android:cropToPadding="true"
+                app:srcCompat="@drawable/signup_banner" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutAnimation="@anim/layout_animation">
+
+                <EditText
+                    android:id="@+id/txtFname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="230dp"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:hint="@string/first_name"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/txtLname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="300dp"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:hint="@string/last_name"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="370dp"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/txtPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="440dp"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textAlignment="center" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="200dp"
+                    android:layout_height="92dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="510dp"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    tools:layout_editor_absoluteX="102dp"
+                    tools:layout_editor_absoluteY="382dp">
+
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="@string/student" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="@string/tutor" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/txtIndexNo"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="620dp"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:hint="Enter your ID"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textAlignment="center" />
+
+                <Spinner
+                    android:id="@+id/txtProgramme"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="690dp"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:entries="@array/Courses"
+                    android:hint="@string/programme_of_study"
+                    android:spinnerMode="dialog"
+                    android:textAlignment="center"
+                    tools:layout_editor_absoluteX="46dp"
+                    tools:layout_editor_absoluteY="572dp" />
+
+
+                <Spinner
+                    android:id="@+id/txtLevel"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="760dp"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="10"
+                    android:entries="@array/Level"
+                    android:prompt="@string/enter_your_level"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="center"
+                    tools:layout_editor_absoluteX="99dp"
+                    tools:layout_editor_absoluteY="611dp" />
+
+                <TextView
+                    android:id="@+id/btnsign_up"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="830dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rectangle_tans2"
+                    android:text="Sign up"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="40sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

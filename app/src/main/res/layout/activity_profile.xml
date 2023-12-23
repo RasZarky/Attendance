@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background"
+    tools:context=".profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_above="@+id/app_bar"
+        tools:ignore="NotSibling">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:civ_circle_background_color="#ececec"
+            android:src="@drawable/ic_baseline_person_24_2"
+            app:civ_border_width="5dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="110dp"
+            android:layout_marginTop="30dp"
+            android:elevation="1dp"
+            app:civ_border_color="#ececec"
+            tools:ignore="VectorDrawableCompat" />
+
+
+            <ImageView
+                android:id="@+id/pick_pic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/edit"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="200dp"
+                android:elevation="2dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+         android:layout_marginTop="100dp"
+         android:layout_marginBottom="100dp"
+         android:layout_marginLeft="32dp"
+         android:layout_marginRight="32dp"
+            android:background="@drawable/search_back">
+
+
+         <TextView
+             android:id="@+id/name"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Abdul Razak Abubakari"
+             android:textSize="22sp"
+          android:textStyle="bold"
+          android:textColor="#000000"
+          android:layout_marginTop="100dp"
+          android:textAlignment="center"/>
+
+         <TextView
+             android:id="@+id/status"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:text="Student"
+             android:textColor="#828181"
+             android:textSize="22sp"
+             android:textStyle="bold"
+             android:layout_marginTop="130dp"
+             android:textAlignment="center"/>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+          android:layout_below="@+id/status"
+          android:layout_marginLeft="32dp"
+          android:layout_marginRight="32dp"
+          android:layout_marginTop="8dp"
+          android:layout_marginBottom="32dp"
+          android:orientation="vertical">
+
+          <RelativeLayout
+              android:id="@+id/index"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:background="@drawable/item_bacground">
+
+              <ImageView
+                  android:layout_width="50dp"
+                  android:layout_height="50dp"
+                  android:padding="5dp"
+                  app:srcCompat="@drawable/id"/>
+
+              <TextView
+                  android:id="@+id/idhead"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="ID Number"
+                  android:textColor="#000000"
+                  android:textStyle="bold"
+                  android:textSize="16sp"
+                  android:layout_marginLeft="50dp"/>
+
+              <TextView
+                  android:id="@+id/ID"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/idhead"
+                  android:text="UED2900419"
+                  android:textColor="#000000"
+                  android:textSize="16sp"
+                  android:layout_marginLeft="50dp"/>
+
+          </RelativeLayout>
+
+             <RelativeLayout
+                 android:id="@+id/Prog"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                 android:background="@drawable/item_bacground">
+
+                 <ImageView
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:padding="5dp"
+                     app:srcCompat="@drawable/programme"/>
+
+                 <TextView
+                     android:id="@+id/idhead"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Programme"
+                     android:textColor="#000000"
+                     android:textStyle="bold"
+                     android:textSize="16sp"
+                     android:layout_marginLeft="50dp"
+                     tools:ignore="DuplicateIds" />
+
+                 <TextView
+                     android:id="@+id/programme"
+                     android:layout_width="200dp"
+                     android:layout_height="20dp"
+                     android:layout_below="@+id/idhead"
+                     android:text="Diploma Computer Science"
+                     android:textColor="#000000"
+                     android:textSize="16sp"
+                     android:layout_marginLeft="50dp"/>
+
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:id="@+id/lev"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                 android:background="@drawable/item_bacground">
+
+                 <ImageView
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:padding="5dp"
+                     app:srcCompat="@drawable/ic_baseline_elevator_24"/>
+
+                 <TextView
+                     android:id="@+id/idhead"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Level"
+                     android:textColor="#000000"
+                     android:textStyle="bold"
+                     android:textSize="16sp"
+                     android:layout_marginLeft="50dp"
+                     tools:ignore="DuplicateIds" />
+
+                 <TextView
+                     android:id="@+id/level"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/idhead"
+                     android:text="200"
+                     android:textColor="#000000"
+                     android:textSize="16sp"
+                     android:layout_marginLeft="50dp"/>
+
+             </RelativeLayout>
+             <RelativeLayout
+                 android:id="@+id/logout"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="20dp"
+                 android:background="@drawable/item_bacground">
+
+                 <ImageView
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:foregroundGravity="center_vertical"
+                     android:padding="5dp"
+                     app:srcCompat="@drawable/ic_baseline_exit_to_app_24"/>
+
+                 <TextView
+                     android:id="@+id/idhead"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Logout"
+                     android:textColor="#000000"
+                     android:textStyle="bold"
+                     android:textSize="16sp"
+                     android:layout_marginLeft="50dp"
+                     tools:ignore="DuplicateIds" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@+id/idhead"
+                     android:text="Enter password on next app launch"
+                     android:textColor="#000000"
+                     android:textSize="16sp"
+                     android:layout_marginLeft="50dp"/>
+
+             </RelativeLayout>
+
+         </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:layout_alignParentBottom="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="NotSibling">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:backgroundTint="#f6f6f6"
+            android:id="@+id/app_bar"
+            app:fabCradleMargin="8dp"
+            app:fabCradleRoundedCornerRadius="50dp"
+            app:fabCradleVerticalOffset="6dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/homeBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/bottom_btn1" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp"
+                        tools:ignore="DuplicateIds" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/connectBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/connect"
+                        tools:ignore="DuplicateIds" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Connect"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp"
+                        tools:ignore="DuplicateIds" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/bottom_btn1"
+                        tools:ignore="DuplicateIds" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp"
+                        tools:ignore="DuplicateIds" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/classBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/chart" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Class"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp"
+                        tools:ignore="DuplicateIds" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profileBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/ic_baseline_person_24_2"
+                        tools:ignore="DuplicateIds" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"
+                        android:textAlignment="center"
+                        android:textColor="#676767"
+                        android:textSize="12sp"
+                        tools:ignore="DuplicateIds" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#ff5e00"
+            android:elevation="10dp"
+            app:srcCompat="@drawable/add"
+            app:backgroundTint="#ff5e00"
+            app:layout_anchor="@id/app_bar"
+            app:maxImageSize="30dp"
+            app:tint="#ffffff" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

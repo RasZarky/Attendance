@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Attendance Checker</string>
+    <string name="enter_your_text_here">Enter your text here</string>
+    <string name="button">Button</string>
+    <string name="generate_code">GENERATE CODE</string>
+    <string name="scan_code">SCAN CODE</string>
+    <string name="qr_code_appears_here">QR CODE APPEARS HERE</string>
+    <string name="enter_your_index_number">Enter your index number</string>
+    <string name="enter_your_password">Enter your Password</string>
+
+    <string name="sign_up">sign up</string>
+    <string name="login">Login</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last name</string>
+    <string name="password">Password</string>
+    <string name="student">Student</string>
+    <string name="tutor">Tutor</string>
+    <string name="programme_of_study">Programme of study</string>
+    <string name="show">show</string>
+    <string name="enter_programme">Enter Programme</string>
+    <string name="enter_course_id">Enter course id</string>
+    <string name="name">Name</string>
+    <string name="enter_today_s_date">Enter today\'s date</string>
+    <string name="enter_your_level" />
+    <string name="enter_level">Enter level</string>
+    <string name="programme">Programme</string>
+    <string name="course">Course</string>
+    <string name="level">Level</string>
+    <string name="todo">TODO</string>
+    <string name="go_to_class">Go to class</string>
+    <string-array name="Level">
+        <item>Select Level</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+    </string-array>
+    <string-array name="Courses">
+        <item>SELECT YOUR PROGRAMME</item>
+        <item>~~~~School of Sciences~~~~</item>
+        <item> BSc. Nursing</item>
+        <item> BSc. Chemistry</item>
+        <item> BSc. Biological Science</item>
+        <item>  BSc. Medical Biodiagnostic Science</item>
+        <item> BSc. Computer Science</item>
+        <item> BSc. Information Technology</item>
+        <item> BSc. Actuarial Science</item>
+        <item> BSc. Mathematics</item>
+        <item> BSc. Statistics</item>
+        <item> Diploma in Information Technology</item>
+        <item> Diploma in Computer Science</item>
+        <item> Diploma in Insurance</item>
+        <item> Diploma in Statistics</item>
+        <item> School of Natural Resources</item>
+        <item> BSc. Natural Resources</item>
+        <item> BSc. Wildfire and Range Management</item>
+        <item> Diploma in Natural Resources Management</item>
+        <item> Diploma in Fire and Disaster Management</item>
+        <item> School of Engineering</item>
+        <item>  BSc. Agricultural Engineering</item>
+        <item>  BSc. Computer Engineering</item>
+        <item>  BSc. Electrical and Electronic Engineering </item>
+        <item> BSc. Mechanical Engineering </item>
+        <item>BSc. Environmental Engineering</item>
+        <item>BSc. Renewable Energy Engineering</item>
+        <item>  BSc. Petroleum Engineering</item>
+        <item> BSc. Civil Engineering</item>
+        <item> Diploma in Electrical and Electronic Engineering</item>
+        <item> School of Geo-Sciences</item>
+        <item> BSc. Planning and Sustainability</item>
+        <item> BSc. climate Change and Sustainable Development</item>
+        <item> Diploma in Geo-Information Science</item>
+        <item> School of Agriculture and Technology</item>
+        <item> BSc. Agribusiness </item>
+        <item> BSc. Agriculture </item>
+        <item>  Diploma in Agriculture</item>
+        <item>  School of Management Sciences and Law</item>
+        <item>  B.A Professional French</item>
+        <item> BSc. Hospitality Management </item>
+        <item> BSc. Resource Enterprise and Entrepreneurship</item>
+        <item> Diploma in Enterprise Management</item>
+        <item>                      </item>
+        <item>~~~~Postgraduate Courses~~~~</item>
+        <item> School of Graduate Studies</item>
+        <item> MSc./MPhil Climate Change</item>
+        <item> MPhil Applied Mathematics</item>
+        <item> MSc./MPhil/PhD Crop Sciences</item>
+        <item>MBA/MPhil Agribusiness Management</item>
+        <item>  MSc./MPhil Environment Planning and Sustainability</item>
+        <item>  MSc./PhD Sustainable Energy Management</item>
+        <item> MSc./MPhil/Ph.D. in Computer Science</item>
+    </string-array>
+</resources>
